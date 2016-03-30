@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url('/imgs/snow-soldier.jpg');
+    background-image: url('{{site.baseurl}}/imgs/snow-soldier.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
