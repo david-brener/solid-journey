@@ -1,14 +1,12 @@
 <!DOCTYPE html>
-<html lang="">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Starter Template for Bootstrap 3.3.6</title>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="shortcut icon" href="">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
     <link rel="stylesheet" href="{{site.baseurl}}/css/app.css">
     
 
@@ -19,37 +17,43 @@
 </head>
 
 <body>
-    <div class="section">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-lg-12">
-              <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+
            
-          </ul>
-          
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+ <nav class="navbar navbar-light bg-faded">
+
+<!-- Toggle Button -->
+<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#nav-content">
+☰
+</button>
+
+<!-- Nav Content -->
+<div class="collapse navbar-toggleable-xs" id="nav-content">
+<a class="navbar-brand" href="#">Logo</a>
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="{{site.baseurl}}/index.html">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="{{site.baseurl}}/sig.html">Sig</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="{{site.baseurl}}/glock.html">Glock</a>
+</li>
+</ul>
+</div>
+
+</nav>
+           
 
    {{content}}
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+      $('.parallax').parallax();
+    });
+        </script>
 </body>
 </html>
 

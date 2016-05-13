@@ -1,27 +1,128 @@
 ---
 ---
+@import "glock",
+"sig"; 
+@import url(https://fonts.googleapis.com/css?family=Russo+One|Armata);
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-image: url('{{site.baseurl}}/imgs/snow-soldier.jpg');
+    background-color: #5E747F;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.section {
-    margin-top: 50px;
+//FONTS//////////////////////////////////////////
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Russo One', sans-serif;
+}
+
+p,
+span,
+li {
+    font-family: 'Armata', sans-serif;
+}
+p {
+    font-size: 16px;
+}
+
+hr {
+    background-color: #f5f5f5;
+}
+
+//END OF FONTS/////////////////////////////////
+.navbar {
+    border-radius: 0;
+}
+
+.lead {
+    text-align: center;
+    margin-top: 5px;
+}
+
+//FLEXBOX//
+.flex-parent {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.flex-child {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin-left: 10px;
+}
+
+
+//END FLEXBOX///////////////////////////
+//TABLES Y'ALL/////////////////////////
+.table-striped tbody tr:nth-of-type(2n+1) {
+    background-color: orange;
+}
+
+@-moz-document url-prefix() {
+    fieldset {
+        display: table-cell;
+    }
+}
+
+//END TABLES////////////////////////////
+//SECTIONS, YO!////////////////////////
+.homepage-section001 {
+    padding-top: 200px;
+}
+.homepage-column {
+    text-align: center;
+}
+
+.at-logo {
+    margin: 10px auto;
+}
+.firearms-text {
+    color: #f5f5f5;
+}
+
+.section001 {
+    margin-top: 20px;
+    text-align: center;
 }
 
 .section {
+    margin-top: 30px;
     height: 100vh;
 }
+
+.section003 {
+    background-color: slategray;
+}
+
+//END SECTIONS//////////////////////////
+@media all and (max-width: 980px) {
+    .table {
+        margin: 20px auto;
+        display: table;
+        
+    }
+}
+
 @media all and (max-width:480px) {
-    .col-lg-6 {
-        p {
-            margin-bottom: 15px;
+    .glock-header {
+        .flex-parent {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
         }
     }
+    .table {
+        display: block;
+    }
+
 }
